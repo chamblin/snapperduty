@@ -28,7 +28,7 @@ post "/h/:hook_id" do
 		halt 404, "No such endpoint"
 	end
 
-	worker_parameters = {"hook_id" => params[:hook_id]} # fill in the blanks here
+	worker_parameters = {"hook_id" => params[:hook_id], "body" => request.body.read} # fill in the blanks here
 
 	Job.do(worker_parameters)
 

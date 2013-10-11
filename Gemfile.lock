@@ -11,25 +11,69 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (4.0.0)
+      i18n (~> 0.6, >= 0.6.4)
+      minitest (~> 4.2)
+      multi_json (~> 1.3)
+      thread_safe (~> 0.1)
+      tzinfo (~> 0.3.37)
+    addressable (2.2.8)
+    atomic (1.1.14)
+    eventmachine (1.0.3)
+    faraday (0.5.7)
+      addressable (~> 2.2.4)
+      multipart-post (~> 1.1.0)
+      rack (>= 1.1.0, < 2)
+      rack (>= 1.1.0, < 2)
     haml (4.0.3)
       tilt
+    highlight (2.0.0)
+    http_parser.rb (0.5.3)
+    i18n (0.6.5)
     json (1.8.0)
+    memegen (1.0.9)
+      highlight
+      multipart-post
+      rmagick
+      tinder (= 1.4.4)
+    mime-types (1.25)
+    minitest (4.7.5)
     mono_logger (1.1.0)
+    multi_json (1.8.1)
+    multipart-post (1.1.5)
     rack (1.5.2)
     redis (3.0.5)
     redis-namespace (1.3.1)
       redis (~> 3.0.0)
+    rmagick (2.13.2)
+    simple_oauth (0.1.9)
     sinatra (1.1.0)
       rack (~> 1.1)
       tilt (~> 1.1)
     thor (0.18.1)
+    thread_safe (0.1.3)
+      atomic
     tilt (1.4.1)
+    tinder (1.4.4)
+      activesupport
+      eventmachine
+      faraday (~> 0.5.1)
+      mime-types
+      multipart-post
+      twitter-stream
+    twitter-stream (0.1.16)
+      eventmachine (>= 0.12.8)
+      http_parser.rb (~> 0.5.1)
+      simple_oauth (~> 0.1.4)
+    tzinfo (0.3.38)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   haml
+  json
+  memegen
   redis
   resque (~> 2.0.0.pre.1)!
   sinatra (= 1.1.0)
