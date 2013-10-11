@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+ruby "2.0.0"
+gem "sinatra", "1.1.0"
+gem "redis"
+gem "haml"
+gem "resque", "~> 2.0.0.pre.1", github: "resque/resque"
