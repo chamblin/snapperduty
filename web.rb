@@ -4,7 +4,7 @@ require File.join(File.dirname(__FILE__), "util/hook")
 require File.join(File.dirname(__FILE__), "work")
 
 set :bind, '0.0.0.0'
-set :port, :8888
+set :port, 8888
 
 get "/" do
 	# 1. edit views/index.haml to make a sweet form
